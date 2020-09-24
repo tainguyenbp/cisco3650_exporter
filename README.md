@@ -5,10 +5,13 @@ This project is built with:
 
 And is packaged as a Docker container. The two top level dependencies are:
 
-- prometheus
-- netmiko
-- psutil
 - prometheus-client==0.0.21
+- netmiko==3.3.0
+- pip==9.0.3
+- prometheus==0.3.0
+- psutil==5.7.2
+
+
 
 See the [requirements file](./requirements.txt) for more details.
 
@@ -19,7 +22,7 @@ monitoring application.
 To instrument our Python code we need to manipulate the metrics each
 time a new HTTP request is received.
 
-See [the application](./app.py) for more details.
+See [the application](./cisco3650_exporter.py) for more details.
 
 ## Building
 
