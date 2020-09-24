@@ -44,10 +44,10 @@ access url with port 9250:
 ## Add config to the prometheus.yml file:
 
 ```
-  - job_name: 'asterisk_exporter'
+  - job_name: 'cisco3650_exporter'
     scrape_interval: 30s
     scrape_timeout: 30s
     static_configs:
-    - targets: ['192.168.11.115:9200']
+    - targets: ['192.168.1.10:9250']
 ```
 
