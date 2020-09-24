@@ -41,3 +41,12 @@ access url with port 9250:
 
 `curl http://127.0.0.1:9250/metrics`
 
+## Add config to the prometheus.yml file:
+
+`curl http://127.0.0.1:9250/metrics`
+`  - job_name: 'asterisk_exporter'`
+`    scrape_interval: 30s`
+`    scrape_timeout: 30s`
+`    static_configs:`
+`    - targets: ['192.168.11.115:9200']`
+
