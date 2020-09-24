@@ -26,8 +26,11 @@ See [the application](./app.py) for more details.
 This project is automatically built by Docker Automated Builds.
 
 To build manually:
-
-`docker build -t cisco3650-exporter/tainguyenbp:v1.1 .`
+```
+git clone https://github.com/tainguyenbp/cisco3650_exporter.git
+cd cisco3650_exporter
+docker build -t cisco3650-exporter/tainguyenbp:v1.1 .
+```
 
 ## Running
 
