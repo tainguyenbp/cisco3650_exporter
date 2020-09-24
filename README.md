@@ -35,7 +35,7 @@ Simply open port 9250 when running as a container:
 
 `docker-comose up --build -d`
 
-## Access
+## Access URL check metrics
 
 access url with port 9250:
 
