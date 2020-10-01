@@ -14,7 +14,8 @@ RUN apk --no-cache add build-base libffi-dev openssl-dev linux-headers \
     && pip install --no-cache-dir pip==9.0.3 \
     && pip install --no-cache-dir prometheus \
     && pip install --no-cache-dir psutil \
-    && rm -rf /var/cache/apk/*
+    && rm -rf /var/cache/apk/* \
+    && rm -f /root/.cache
 
 EXPOSE 9250
 
